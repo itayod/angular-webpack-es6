@@ -1,0 +1,27 @@
+// up and running with
+---------------------------------------------
+1. npm init
+2. npm install webpack webpack-dev-server -D
+3. webpack.config with context and public defined "context: __dirname + '/public', entry: './entry.js',"
+4. link your html file to bundle.js
+5  run server: node_modules/.bin/webpack-dev-server
+6. optional: use the 'npm start' to start up the server
+7. optional: set the --content-base flag for setting the server base folder
+
+// bring in ES6
+---------------------------------------------
+1. npm npm install babel-loader babel-core babel-preset-es2015 -D
+2. webpack.config: add loader to module.loaders array
+3. webpack.config: devtool: "#inline-source-map"
+
+// going Angular
+---------------------------------------------
+1. npm install angular --save
+2. import angular in your "entry.js"
+3. bootstrap angular in your entry.js
+
+// using html
+---------------------------------------------
+1. npm install raw-loader
+2. add the loaders to the config file
+
